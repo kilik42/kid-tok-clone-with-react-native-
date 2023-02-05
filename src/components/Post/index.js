@@ -8,14 +8,14 @@ import styles from './styles';
 const Post = () => {
     return (
         <View style = {styles.container} >
-            <Text >Post 2</Text>
-            <Ionicons name="ios-checkmark-circle" size={32} color="green" />
+            {/* <Text >Post 2</Text>
+            <Ionicons name="ios-checkmark-circle" size={32} color="green" /> */}
             <Video
                     source={{ uri: 'http://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4' }}
                     rate={1.0}
                     volume={1.0}
                     isMuted={false}
-                    resizeMode="cover"
+                    resizeMode={'cover'}
                     shouldPlay
                     isLooping
                     style={styles.video}
