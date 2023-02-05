@@ -12,9 +12,35 @@ const styles = StyleSheet.create({
     }   ,
     container: {
         width:  Dimensions.get('window').width,
-       height: Dimensions.get('window').height,
-    }
+       height: Dimensions.get('window').height - 48,
+
+    },
         
+    uiContainer: {
+        height: '100%',
+        justifyContent: 'flex-end',
+        // backgroundColor: 'red'
+    },
+    rightContainer: {
+        alignSelf: 'flex-end',
+        height: 300,
+        justifyContent: 'space-between',
+        marginRight: 10,
+        marginBottom: 10,
+        // backgroundColor: 'blue'
+    },
+    profilePicture: {
+        width: 50,
+        height: 50,
+        borderRadius: 25,
+        borderWidth: 2,
+        borderColor: 'white'
+    },
+    iconContainer: {
+        alignItems: 'center'
+    }
+
+    
 })
 
 export default styles;
