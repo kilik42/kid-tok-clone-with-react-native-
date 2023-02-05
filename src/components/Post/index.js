@@ -3,12 +3,12 @@ import { StyleSheet, Text, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { Video } from 'expo-av';
 import VideoPlayer from 'expo-video-player'
-
+import styles from './styles';
 
 const Post = () => {
     return (
-        <View >
-            <Text >Post</Text>
+        <View style = {styles.container} >
+            <Text >Post 2</Text>
             <Ionicons name="ios-checkmark-circle" size={32} color="green" />
             <Video
                     source={{ uri: 'http://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4' }}
@@ -18,10 +18,11 @@ const Post = () => {
                     resizeMode="cover"
                     shouldPlay
                     isLooping
-                    style={{ width: 300, height: 300 }}
+                    style={styles.video}
                     />
         </View>
     );
 }
 
 export default Post;
+
