@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
 
     }   ,
     container: {
-        width: '100%',
+        width:  Dimensions.get('window').width,
        height: Dimensions.get('window').height,
     }
         
